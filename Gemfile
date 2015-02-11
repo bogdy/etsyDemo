@@ -27,6 +27,7 @@ gem 'paperclip'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
+gem 'devise-i18n'
 gem 'autoprefixer-rails'
 
 group :production do
