@@ -1,0 +1,21 @@
+<section class="contenido">
+	<div class="container">
+		<p>
+		  <strong>Adress:</strong>
+		  <%= @order.adress %>
+		</p>
+
+		<p>
+		  <strong>City:</strong>
+		  <%= @order.city %>
+		</p>
+
+		<p>
+		  <strong>State:</strong>
+		  <%= @order.state %>
+		</p>
+
+		<%= link_to 'Edit', edit_order_path(@order) %> |
+		<%= link_to 'Back', orders_path %>
+	</div>
+</section>

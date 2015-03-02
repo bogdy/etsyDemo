@@ -13,5 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require owl.carousel
+//= require sweet-alert
 //= require turbolinks
 //= require_tree .
+
+$(document).on("ready page:update",function() {
+	$(".owl-carousel").owlCarousel({
+              lazyLoad : true,
+              navigation : false, // Show next and prev buttons
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true,
+              autoHeight : true,
+              // autoPlay : 7300       
+          });
+        console.log("Slider cargado!");
+        // swal("Slider Log", "El slider ha sido cargado!")
+});
+

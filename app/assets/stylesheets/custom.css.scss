@@ -1,9 +1,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "owl.carousel";
+@import "owl.theme";
 
 body {
 	background-color: #f5f7f9;
 	color: #333;
+}
+
+section.contenido {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.container#alertas {
+	padding-top: 30px;
+}
+
+.navbar {
+	margin-bottom: 0px;
 }
 
 .navbar-default {
@@ -35,6 +49,26 @@ body {
 .caption {
 	h3 {font-size: 17px; margin: 2px;}
 	p {font-size: 15px; margin: 0px;}
+}
+
+.slide1 {
+	min-height: 576px;
+	padding-top: 200px;
+	background-image: url('a1.jpg');
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	h1,p {color: white;}
+}
+
+.slide2 {
+	min-height: 576px;
+	padding-top: 200px;
+	background-image: url('a3.jpg');
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	h1,p {color: white;}
 }
 
 footer.footer {

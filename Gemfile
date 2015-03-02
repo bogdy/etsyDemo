@@ -29,6 +29,8 @@ gem "figaro"
 gem 'devise'
 gem 'devise-i18n'
 gem 'autoprefixer-rails'
+gem 'owlcarousel-rails'
+gem 'sweet-alert'
 
 group :production do
 	gem 'pg'
