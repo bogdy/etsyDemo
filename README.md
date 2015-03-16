@@ -31,6 +31,7 @@ I have changed bootstrap alerts with sweet alert.
 
 Bootstrap alerts code in <tt>/layouts/application.html.erb</tt>:
 <pre>
+	```ruby
 	<% flash.each do |name, msg| %>
 		<div class="container" id="alertas">
 			<% if msg.is_a?(String) %>
@@ -41,6 +42,7 @@ Bootstrap alerts code in <tt>/layouts/application.html.erb</tt>:
 			<% end %>
 		</div>
 	<% end %>
+	```
 </pre>
 I changed it for:
 <pre>
