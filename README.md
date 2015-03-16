@@ -30,8 +30,8 @@ Please feel free to use a different markup language if you do not plan to run
 I have changed bootstrap alerts with sweet alert.
 
 Bootstrap alerts code in <tt>/layouts/application.html.erb</tt>:
-<pre>
-	```ruby
+
+	```
 	<% flash.each do |name, msg| %>
 		<div class="container" id="alertas">
 			<% if msg.is_a?(String) %>
@@ -43,14 +43,14 @@ Bootstrap alerts code in <tt>/layouts/application.html.erb</tt>:
 		</div>
 	<% end %>
 	```
-</pre>
+
 I changed it for:
-<pre>
+```
 	<% flash.each do |name, msg| %>
 			<% if msg.is_a?(String) %>
-				```javascript				
+				<script type="text/javascript">			
 					swal("Good job!", "<%= msg %>", "<%= name.to_s == "notice" ? "success" : "danger" %>")
-				```
+				</script>
 			<% end %>
 	<% end %>
-</pre>
+```
