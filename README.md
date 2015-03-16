@@ -44,7 +44,7 @@ Bootstrap alerts code in <tt>/layouts/application.html.erb</tt>:
 	<% end %>
 	```
 
-I changed it for:
+I changed it to:
 ```
 	<% flash.each do |name, msg| %>
 			<% if msg.is_a?(String) %>
